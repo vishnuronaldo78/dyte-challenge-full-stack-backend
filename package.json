@@ -1,0 +1,29 @@
+{
+  "name": "dyte-challenge-full-stack-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PORT=5000 node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnuronaldo78/dyte-challenge-full-stack-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnuronaldo78/dyte-challenge-full-stack-backend/issues"
+  },
+  "homepage": "https://github.com/vishnuronaldo78/dyte-challenge-full-stack-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "geoip-lite": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "valid-url": "^1.0.9"
+  }
+}
