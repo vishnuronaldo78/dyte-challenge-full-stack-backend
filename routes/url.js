@@ -34,6 +34,10 @@ router.post('/shorten', verify, async (req, res) => {
       if (url) {
         res.json(url)
       } else {
+        let customUrl = await Url.findOne({ urlCode });
+        if (customUrl) {
+          return res.status(401).json("Custom URL already used")
+        }
         const shortUrl = baseUrl + '/' + urlCode
         url = new Url({
           longUrl,
